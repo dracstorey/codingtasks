@@ -21,7 +21,7 @@ while counter < len(message):
     if message[counter] == " ":
         new_word = new_word + " "
     else:
-        # get ascii value, substratc 65 (value of A) add shift value, find module 26 (l;etters in alphabte) and add 65 on.
+        # get ascii value, substract 65 (value of A) add shift value, find module 26 (l;etters in alphabte) and add 65 on.
         new_word = new_word +  (chr((ord(message[counter])-65 + shift_value)%26 + 65))
     #end if
     # Increment the counter
