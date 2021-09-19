@@ -10,7 +10,7 @@ counter = 1
 print("The factors of ", number, "are: ")
 
 # Loop round all number between 1 and half of the given number
-while counter < number // 2 +1:
+while counter < number // 2 + 1:
     
     # Check if it divides .. remainder will be zero
     if number%counter == 0:
