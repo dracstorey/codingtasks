@@ -133,12 +133,15 @@ class Game():
 
                 for s in self.board.snake_list:
                     if s.start == p.pos:
+                        print (p.name, "hit snake", str(p.pos) + "-->" + str(s.end))
                         p.pos = s.end
+                        
 
                 for l in self.board.ladder_list:
                     if l.start == p.pos:
+                        print (p.name, "hit ladder", str(p.pos) + "-->" + str(l.end))
                         p.pos = l.end
-
+                        
 
                 if p.pos  > 100:
                     self.done = True
